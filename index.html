@@ -1,0 +1,1055 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="./css/normalize.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./fonts/martel.ttf">
+
+    <script src="./JS/jquery.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            $("#btnModal").on("click", () => {
+                $("#meu-modal").modal('show')
+            })
+        })
+    </script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css"
+        integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx"
+        crossorigin="anonymous"></script>
+
+    <title>TibiaPocket - FanSite</title>
+</head>
+
+<body class="bg-dark" style="padding-bottom: 0; background-image: url('bg2.jpg');">
+
+    <nav id="minhaNav" class="navbar navbar-expand-lg navbar-dark fixed-top" style="background-color: rgb(32, 32, 41);">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">
+                <img src="./img/logo-official.png" class="img-fluid" width="60px" height="auto" alt="TibiaPocket" style="margin-right: 15vw;">
+            </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown"
+                aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                <ul class="navbar-nav">
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            Tutoriais
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                            <a class="dropdown-item" href="#druid">Mages</a>
+                            <a class="dropdown-item" href="#kina">Knight</a>
+                            <a class="dropdown-item" href="#pally">Paladin</a>
+                        </div>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            Quest
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                            <a class="dropdown-item" href="#booze">The Ultimate Booze</a>
+                            <a class="dropdown-item" href="#booze">The Golden Outfit Quest</a>
+                        </div>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            Criaturas
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                            <a class="dropdown-item" href="#birds">Aves</a>
+                            <a class="dropdown-item" href="#demons">Demônios</a>
+                            <a class="dropdown-item" href="#dragons">Dragões</a>
+                            <a class="dropdown-item" href="#humans">Humanos</a>
+                        </div>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            Bosses
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                            <a class="dropdown-item" href="#feru">Ferumbras</a>
+                            <a class="dropdown-item" href="#gaz">Gaz'Haragoth</a>
+                            <a class="dropdown-item" href="#undcave">Undead Cavebear</a>
+                        </div>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            Equipamentos
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                            <a class="dropdown-item" href="#helmet">Capacetes</a>
+                            <a class="dropdown-item" href="#armor">Armaduras</a>
+                            <a class="dropdown-item" href="#shield">Escudos</a>
+                            <a class="dropdown-item" href="#leg">Calças</a>
+                            <a class="dropdown-item" href="#boot">Botas</a>
+                        </div>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            Armas
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                            <a class="dropdown-item" href="#sword">Espadas</a>
+                            <a class="dropdown-item" href="#axe">Machados</a>
+                            <a class="dropdown-item" href="#club">Clavas</a>
+                            <a class="dropdown-item" href="#rodsewands">Rods e Wands</a>
+                            <a class="dropdown-item" href="#distance">Distância</a>
+                        </div>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#galery">Galeria</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./minigameIndex.html" target="_blank">Minigame</a>
+                    </li>
+                    <li class="nav-item">
+                        <a id="btnModal" class="btn btn-secondary" data-toggle="modal" data-target="#meu-modal" style="margin-left: 15vw;">
+                            Conectar
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <main class="container" style="margin-bottom: 4vh;">
+
+        <section id="tutorial" class="bg-custom container-fluid" style="margin-top: 20vh;">
+            <div id="druid" class="cardSite">
+                <h2>Mages</h2>
+                <h4>Como caçar:</h4>
+
+                <ul>
+                    <li>
+                        <p>Level 45+ (1.5kk/h +): <a href="https://www.youtube.com/watch?v=ped7xg5o-cY"
+                                target="_blank">Issavi Bridge</a></p>
+                    </li>
+                    <li>
+                        <p>Level 45+ (700k/h +): <a href="https://www.youtube.com/watch?v=YB-lSM64ohY"
+                                target="_blank">Minotaur Oramond</a></p>
+                    </li>
+                    <li>
+                        <p>Level 80+ solo: <a href="https://www.youtube.com/watch?v=ikiQpV8JNec"
+                                target="_blank">Grimvale</a></p>
+                    </li>
+                    <li>
+                        <p>Level 80+ x2: <a href="https://www.youtube.com/watch?v=Ga76Mwr6jSs" target="_blank">Elfos de
+                                Fogo</a></p>
+                    </li>
+                </ul>
+                <img src="./img/mages.png" class="img-fluid" alt="mages">
+            </div>
+
+            <div id="kina" class="cardSite">
+                <h2>Knight</h2>
+                <h4>Como caçar:</h4>
+
+                <ul>
+                    <li>
+                        <p>Level 35+ (225k/h+) profit: <a href="https://www.youtube.com/watch?v=ruf6J-UAtuk"
+                                target="_blank">The Forgotten Tombs</a></p>
+                    </li>
+                    <li>
+                        <p>Level 80+ (750k/h+): <a href="https://www.youtube.com/watch?v=oJtdTvSPNrk"
+                                target="_blank">Nightmare Krailos</a></p>
+                    </li>
+                    <li>
+                        <p>Level 150+ profit: <a href="https://www.youtube.com/watch?v=SuUkyZj_zn0"
+                                target="_blank">Nightmare Beach</a></p>
+                    </li>
+                    <li>
+                        <p>Level 250+ (only party) profit: <a href="https://www.youtube.com/watch?v=aShezEzAkfE"
+                                target="_blank">Nightmare Isles</a></p>
+                    </li>
+                </ul>
+                <img src="./img/knights.png" class="img-fluid" alt="">
+            </div>
+            <div id="pally" style="margin-bottom: 5vh;" class="cardSite">
+                <h2>Paladin</h2>
+                <h4>Como caçar:</h4>
+
+                <ul>
+                    <li>
+                        <p>Level 30+ (250k/h+): <a href="https://www.youtube.com/watch?v=yqZxA9nDj9I"
+                                target="_blank">Quaras</a></p>
+                    </li>
+                    <li>
+                        <p>Level 80+ (650k/h+): <a href="https://www.youtube.com/watch?v=NppScmkV398"
+                                target="_blank">MOTA Fury</a></p>
+                    </li>
+                    <li>
+                        <p>Level 150+ (800k/h+): <a href="https://www.youtube.com/watch?v=EgO9JwNrzAs"
+                                target="_blank">Nightmare Creatures Cave</a></p>
+                    </li>
+                    <li>
+                        <p>Level 200+ (2.5kk/h+): <a href="https://www.youtube.com/watch?v=Mrv1tyyaOWY"
+                                target="_blank">Werehyennas</a></p>
+                    </li>
+                </ul>
+                <img src="./img/paladins.png" class="img-fluid" alt="">
+            </div>
+        </section>
+
+        <section id="spoiler" class="bg-custom" style="margin-top: 3vh;">
+            <div id="booze" class="cardSite row">
+                <div class="col-6">
+                    <h2>The Ultimate Booze Quest</h2>
+                    <h4>Infos:</h4>
+                    <ul>
+                        <li>Level Necessário: 0;</li>
+                        <li>Dificuldade: fácil</li>
+                        <li>Duração: Média</li>
+                        <li>Localização: Venore - Mushroom Brewery</li>
+                    </ul>
+
+                    <h4>Recompensas</h4>
+                    <ul>
+                        <li>1 <a href="https://www.tibiawiki.com.br/wiki/Light_Shovel" target="_blank">Light Shovel</a>
+                        </li>
+                        <li>10 platinum coins</li>
+                        <li>100 de experiência</li>
+                    </ul>
+                </div>
+                <div class="img-card col-6 text-center">
+                    <img src="./img/light.jpg" alt="">
+
+                    <a href="https://www.tibiawiki.com.br/wiki/The_Ultimate_Booze_Quest" target="_blank">
+                        <h4>Clique aqui para ver o spoiler completo</h4>
+                    </a>
+                </div>
+
+            </div>
+
+            <div id="golden" class="row" style="margin-bottom: 5vh;">
+                <div class="col-6">
+                    <h2>Golden Outfit Quest</h2>
+                    <h4>Requerimentos:</h4>
+                    <ul>
+                        <li>Parte 1: 500.000.000 gps</li>
+                        <li>Parte 2: 250.000.000 gps</li>
+                        <li>Parte 3: 250.000.000 gps</li>
+                        <li>Total: 1.000.000.000 gps</li>
+                    </ul>
+
+                    <h4>Recompensas:</h4>
+                    <ul>
+                        <li><a href="https://www.tibiawiki.com.br/wiki/Golden_Outfits">Golden Outfits</a></li>
+                        <li>Addons</li>
+                        <li><a href="https://www.tibiawiki.com.br/wiki/The_Golden_Outfit_Display" target="_blank">The
+                                Golden Outfit Display</a></li>
+                        <li>Seu nome gravado no memorial</li>
+                    </ul>
+                </div>
+                <div class="col-6 img-card text-center">
+                    <img src="./img/golden.jpg" alt="">
+
+                    <a href="https://www.tibiawiki.com.br/wiki/Golden_Outfits_Quest" target="_blank">
+                        <h4 style="margin: 0;">Clique aqui para ver o spoiler completo</h4>
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <section id="creatures" class="bg-custom" style="margin-top: 3vh;">
+            <div id="birds">
+                <h2>Aves</h2>
+
+                <table class="table table-dark table-striped" style="width: 80%;margin-left: 10%;">
+                    <thead>
+                        <tr>
+                            <th scope="col">#</th>
+                            <th scope="col">Nome</th>
+                            <th scope="col">HP</th>
+                            <th scope="col">EXP</th>
+                            <th scope="col">Charm</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <th scope="row"><a href="https://www.tibiawiki.com.br/wiki/Chicken" target="_blank"><img
+                                        src="./img/chicken.gif" alt=""></a></th>
+                            <td>Chicken</td>
+                            <td>15</td>
+                            <td>0</td>
+                            <td>5</td>
+                        </tr>
+                        <tr>
+                            <th scope="row"><a href="https://www.tibiawiki.com.br/wiki/Flamingo" target="_blank"><img
+                                        src="./img/Flamingo.gif" alt=""></a></th>
+                            <td>Flamingo</td>
+                            <td>20</td>
+                            <td>0</td>
+                            <td>5</td>
+                        </tr>
+                        <tr>
+                            <th scope="row"><a href="https://www.tibiawiki.com.br/wiki/Parrot" target="_blank"><img
+                                        src="./img/Parrot.gif" alt=""></a></th>
+                            <td>Parrot</td>
+                            <td>25</td>
+                            <td>0</td>
+                            <td>5</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <div id="demons">
+                <h2>Demônios</h2>
+
+                <table class="table table-dark table-striped" style="width: 80%;margin-left: 10%;">
+                    <thead>
+                        <tr>
+                            <th scope="col">#</th>
+                            <th scope="col">Nome</th>
+                            <th scope="col">HP</th>
+                            <th scope="col">EXP</th>
+                            <th scope="col">Charm</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <th scope="row"><a href="https://www.tibiawiki.com.br/wiki/Brachiodemon"
+                                    target="_blank"><img src="./img/Brachiodemon.gif" alt=""></a></th>
+                            <td>Brachiodemon</td>
+                            <td>25000</td>
+                            <td>22880</td>
+                            <td>100</td>
+                        </tr>
+                        <tr>
+                            <th scope="row"><a href="https://www.tibiawiki.com.br/wiki/Demon" target="_blank"><img
+                                        src="./img/Demon.gif" alt=""></a></th>
+                            <td>Demon</td>
+                            <td>8200</td>
+                            <td>6000</td>
+                            <td>50</td>
+                        </tr>
+                        <tr>
+                            <th scope="row"><a href="https://www.tibiawiki.com.br/wiki/Plaguesmith" target="_blank"><img
+                                        src="./img/Plaguesmith.gif" alt=""></a></th>
+                            <td>Plaguesmith</td>
+                            <td>8250</td>
+                            <td>3550</td>
+                            <td>25</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <div id="dragons">
+                <h2>Dragões</h2>
+
+                <table class="table table-dark table-striped" style="width: 80%;margin-left: 10%;">
+                    <thead>
+                        <tr>
+                            <th scope="col">#</th>
+                            <th scope="col">Nome</th>
+                            <th scope="col">HP</th>
+                            <th scope="col">EXP</th>
+                            <th scope="col">Charm</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <th scope="row"><a href="https://www.tibiawiki.com.br/wiki/Dragon" target="_blank"><img
+                                        src="./img/Dragon.gif" alt=""></a></th>
+                            <td>Dragon</td>
+                            <td>1000</td>
+                            <td>700</td>
+                            <td>25</td>
+                        </tr>
+                        <tr>
+                            <th scope="row"><a href="https://www.tibiawiki.com.br/wiki/Dragon_Lord" target="_blank"><img
+                                        src="./img/Dragon_Lord.gif" alt=""></a></th>
+                            <td>Dragon Lord</td>
+                            <td>1900</td>
+                            <td>2100</td>
+                            <td>25</td>
+                        </tr>
+                        <tr>
+                            <th scope="row"><a href="https://www.tibiawiki.com.br/wiki/Ghastly_Dragon"
+                                    target="_blank"><img src="./img/Ghastly_Dragon.gif" alt=""></a></th>
+                            <td>Ghastly Dragon</td>
+                            <td>7500</td>
+                            <td>4600</td>
+                            <td>50</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <div id="humans" style="margin-bottom: 5vh;">
+                <h2>Humanóides</h2>
+
+                <table class="table table-dark table-striped" style="width: 80%;margin-left: 10%;">
+                    <thead>
+                        <tr>
+                            <th scope="col">#</th>
+                            <th scope="col">Nome</th>
+                            <th scope="col">HP</th>
+                            <th scope="col">EXP</th>
+                            <th scope="col">Charm</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <th scope="row"><a href="https://www.tibiawiki.com.br/wiki/Dwarf" target="_blank"><img
+                                        src="./img/Dwarf.gif" alt=""></a></th>
+                            <td>Dwarf</td>
+                            <td>90</td>
+                            <td>45</td>
+                            <td>15</td>
+                        </tr>
+                        <tr>
+                            <th scope="row"><a href="https://www.tibiawiki.com.br/wiki/Elf_Arcanist"
+                                    target="_blank"><img src="./img/Elf_Arcanist.gif" alt=""></a></th>
+                            <td>Elf Arcanist</td>
+                            <td>220</td>
+                            <td>175</td>
+                            <td>15</td>
+                        </tr>
+                        <tr>
+                            <th scope="row"><a href="https://www.tibiawiki.com.br/wiki/Lost_Husher" target="_blank"><img
+                                        src="./img/Lost_Husher.gif" alt=""></a></th>
+                            <td>Lost Husher</td>
+                            <td>1600</td>
+                            <td>1800</td>
+                            <td>25</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </section>
+
+        <section id="boss" class="bg-custom" style="margin-top: 3vh;">
+            <div id="feru">
+                <h2>Ferumbras</h2>
+
+                <table class="table table-dark table-striped" style="width: 80%;margin-left: 10%;">
+                    <thead>
+                        <tr>
+                            <th scope="col">#</th>
+                            <th scope="col">Nome</th>
+                            <th scope="col">HP</th>
+                            <th scope="col">EXP</th>
+                            <th scope="col">Dano Máximo</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <th scope="row"><a href="https://www.tibiabosses.com/bossopedia/ferumbras/"
+                                    target="_blank"><img src="./img/Ferumbras.gif" alt=""></a></th>
+                            <td>Ferumbras</td>
+                            <td>50000</td>
+                            <td>12000</td>
+                            <td>2400</td>
+                        </tr>
+                    </tbody>
+                </table>
+
+                <div>
+                    <h4>Fatos Interessantes</h4>
+                    <ul>
+                        <li>
+                            Antes de ele aparecer, 3 mensagens são transmitidas na tela de todos os jogadores online:
+                            "The seals on Ferumbras old cidatel are glowing. Prepare for HIS return mortals." ,
+                            "Ferumbras return is at hand. The Edron Academy calls for Heroes to fight that evil." ,
+                            "Ferumbras has returned to his citadel once more. Stop him before its too late.".
+                        </li>
+                        <li>
+                            Você deve pedir permissão a Zoltan para poder acessar sua área.
+                        </li>
+                        <li>
+                            Ferumbras foi avistado pela primeira vez na Eternia em 21 de agosto de 2006, mas um bug
+                            impedia os jogadores de alcançá-lo. Ele apareceu lá novamente depois de duas semanas, quando
+                            o bug foi corrigido.
+                        </li>
+                        <li>
+                            Existem 2Magical Pillars em sua sala, que podem summonar até 3 Demons cada.
+                        </li>
+                        <li>
+                            Este é o boss mais popular do Tibia. Pergunte aos NPCs sobre "Ferumbras". Muitos deles têm
+                            algo a dizer sobre ele.
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div id="gaz" style="margin-top: 3vh;">
+                <h2>Gaz'Haragoth</h2>
+
+                <table class="table table-dark table-striped" style="width: 80%;margin-left: 10%;">
+                    <thead>
+                        <tr>
+                            <th scope="col">#</th>
+                            <th scope="col">Nome</th>
+                            <th scope="col">HP</th>
+                            <th scope="col">EXP</th>
+                            <th scope="col">Dano Máximo</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <th scope="row"><a href="https://www.tibiabosses.com/bossopedia/gazharagoth/"
+                                    target="_blank"><img src="./img/Gaz'Haragoth.gif" alt=""></a></th>
+                            <td>Gaz'Haragoth</td>
+                            <td>350000</td>
+                            <td>1000000</td>
+                            <td>45000</td>
+                        </tr>
+                    </tbody>
+                </table>
+
+                <div>
+                    <h4>Fatos Interessantes</h4>
+                    <ul>
+                        <li>
+                            Gaz'Haragoth é a criatura mais forte e mais difícil de matar no jogo.
+                        </li>
+                        <li>
+                            Boss nasce todos os dias no Server Save no topo da montanha central em Upper Roshamuul até
+                            ser morto pela primeira vez. Quando isso acontecer, surge como uma invasão na Prisão
+                            Roshamuul.
+                        </li>
+                        <li>
+                            Antes de ele aparecer, a seguinte mensagem é transmitida em texto branco para todos os
+                            jogadores do mundo em que ele nasce: "Gaz'haragoth will shatter your dreams in a barrage of
+                            nightmares!".
+                        </li>
+                        <li>
+                            Gaz'Haragoth tem habilidades especiais que ele avisa antes de usar através de mensagens.
+                        </li>
+                        <li>
+                            Deve-se tomar cuidado ao caminhar no covil de Gaz'haragoth, pois os lacaios se transformam
+                            em Strange Vortex que levam ao Gaz'haragoth's Nightmare. Uma vez teletransportado para cá, o
+                            jogador pode escolher lutar contra os Gaz'haragoth's Nightmare ou escapar por outro portal
+                            ao sul.
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div id="undcave" style="margin-top: 3vh; margin-bottom: 5vh;">
+                <h2>Undead Cavebear</h2>
+
+                <table class="table table-dark table-striped" style="width: 80%;margin-left: 10%;">
+                    <thead>
+                        <tr>
+                            <th scope="col">#</th>
+                            <th scope="col">Nome</th>
+                            <th scope="col">HP</th>
+                            <th scope="col">EXP</th>
+                            <th scope="col">Dano Máximo</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <th scope="row"><a href="https://www.tibiabosses.com/bossopedia/undead-cavebear/"
+                                    target="_blank"><img src="./img/Undead_Cavebear.gif" alt=""></a></th>
+                            <td>Undead Cavebear</td>
+                            <td>450</td>
+                            <td>600</td>
+                            <td>400</td>
+                        </tr>
+                    </tbody>
+                </table>
+
+                <div>
+                    <h4>Fatos Interessantes</h4>
+                    <ul>
+                        <li>
+                            Undead Cavebears aparece em três ataques a cada 5 horas. Cada raid está em um local
+                            diferente na sala do Lich Hell.
+                        </li>
+                        <li>
+                            Undead Cavebear pode ser domesticado por Maxilla Maximus, que é derrubado por Lich, Zanakeph
+                            ou Ribstride.
+                        </li>
+                        <li>
+                            Undead Cavebear é uma montaria desejada e é verificado com frequência. Se você conheceu o
+                            chefe, é melhor matá-lo e voltar preparado para a próxima onda, porque se você voltar ao
+                            depósito de Maxilla Maximus, alguém pode roubar seu chefe!
+                        </li>
+                        <li>
+                            Cavebear Skull e Maxilla são objetos de valor que podem ser saqueados do chefe.
+                        </li>
+                        <li>
+                            Para completar Undead Cavebears no Bestiário, precisamos 5 deles mortos. Você pode ganhar 50
+                            pontos de charm por isso.
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <section id="equipamentos" class="bg-custom" style="margin-top: 3vh;">
+            <div id="helmet">
+                <h2>Capacetes</h2>
+
+                <table class="table table-dark table-striped" style="width: 80%;margin-left: 10%;">
+                    <thead>
+                        <tr>
+                            <th scope="col">#</th>
+                            <th scope="col">Nome</th>
+                            <th scope="col">Arm</th>
+                            <th scope="col">Bônus</th>
+                            <th scope="col">Level Requerido</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <th scope="row"><a href="https://www.tibiawiki.com.br/wiki/Jade_Hat" target="_blank"><img
+                                        src="./img/Jade_Hat.gif" alt=""></a></th>
+                            <td>Jade Hat</td>
+                            <td>4</td>
+                            <td>+1 ML</td>
+                            <td>60</td>
+                        </tr>
+                        <tr>
+                            <th scope="row"><a href="https://www.tibiawiki.com.br/wiki/Lion_Spangenhelm"
+                                    target="_blank"><img src="./img/Lion_Spangenhelm.gif" alt=""></a></th>
+                            <td>Lion Spangenhelm</td>
+                            <td>2 + (3%Phy 5%Earth)</td>
+                            <td>+2 Distance</td>
+                            <td>230</td>
+                        </tr>
+                        <tr>
+                            <th scope="row"><a href="https://www.tibiawiki.com.br/wiki/Cobra_Hood" target="_blank"><img
+                                        src="./img/Cobra_Hood.gif" alt=""></a></th>
+                            <td>Cobra Hood</td>
+                            <td>9 + (5% Physical)</td>
+                            <td>+1 Meelee</td>
+                            <td>270</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <div id="armor" style="margin-top: 3vh;">
+                <h2>Armaduras</h2>
+
+                <table class="table table-dark table-striped" style="width: 80%;margin-left: 10%;">
+                    <thead>
+                        <tr>
+                            <th scope="col">#</th>
+                            <th scope="col">Nome</th>
+                            <th scope="col">Arm</th>
+                            <th scope="col">Bônus</th>
+                            <th scope="col">Level Requerido</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <th scope="row"><a href="https://www.tibiawiki.com.br/wiki/Soulmantle" target="_blank"><img
+                                        src="./img/Soulmantle.gif" alt=""></a></th>
+                            <td>Soulmantle</td>
+                            <td>17 + (4% Physical)</td>
+                            <td>+4 ML</td>
+                            <td>400</td>
+                        </tr>
+                        <tr>
+                            <th scope="row"><a href="https://www.tibiawiki.com.br/wiki/Soulshell" target="_blank"><img
+                                        src="./img/Soulshell.gif" alt=""></a></th>
+                            <td>Soulshell</td>
+                            <td>18 + (3%Physical 15%Fire)</td>
+                            <td>+4 Distance</td>
+                            <td>400</td>
+                        </tr>
+                        <tr>
+                            <th scope="row"><a href="https://www.tibiawiki.com.br/wiki/Lion_Plate" target="_blank"><img
+                                        src="./img/Lion_Plate.gif" alt=""></a></th>
+                            <td>Lion Plate</td>
+                            <td>17 + (6% Physical)</td>
+                            <td>+3 Meelee</td>
+                            <td>270</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <div id="shield" style="margin-top: 3vh;">
+                <h2>Escudos</h2>
+
+                <table class="table table-dark table-striped" style="width: 80%;margin-left: 10%;">
+                    <thead>
+                        <tr>
+                            <th scope="col">#</th>
+                            <th scope="col">Nome</th>
+                            <th scope="col">Arm</th>
+                            <th scope="col">Bônus</th>
+                            <th scope="col">Level Requerido</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <th scope="row"><a href="https://www.tibiawiki.com.br/wiki/Soulmantle" target="_blank"><img
+                                        src="./img/Book_of_Lies.gif" alt=""></a></th>
+                            <td>Book Of Lies</td>
+                            <td>18</td>
+                            <td>+4 ML</td>
+                            <td>150</td>
+                        </tr>
+                        <tr>
+                            <th scope="row"><a href="https://www.tibiawiki.com.br/wiki/Falcon_Escutcheon"
+                                    target="_blank"><img src="./img/Falcon_Escutcheon.gif" alt=""></a></th>
+                            <td>Falcon Escutcheon</td>
+                            <td>40 + (7%Physical 15%Fire)</td>
+                            <td>--</td>
+                            <td>300</td>
+                        </tr>
+                        <tr>
+                            <th scope="row"><a href="https://www.tibiawiki.com.br/wiki/Soulbastion" target="_blank"><img
+                                        src="./img/Soulbastion.gif" alt=""></a></th>
+                            <td>Soulbastion</td>
+                            <td>42 + (10%Physical 10%Death)</td>
+                            <td>--</td>
+                            <td>400</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <div id="leg" style="margin-top: 3vh;">
+                <h2>Calças</h2>
+
+                <table class="table table-dark table-striped" style="width: 80%;margin-left: 10%;">
+                    <thead>
+                        <tr>
+                            <th scope="col">#</th>
+                            <th scope="col">Nome</th>
+                            <th scope="col">Arm</th>
+                            <th scope="col">Bônus</th>
+                            <th scope="col">Level Requerido</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <th scope="row"><a href="https://www.tibiawiki.com.br/wiki/Soulstrider" target="_blank"><img
+                                        src="./img/Soulstrider.gif" alt=""></a></th>
+                            <td>Soulstrider</td>
+                            <td>10 + (10%Death)</td>
+                            <td>+3 ML</td>
+                            <td>400</td>
+                        </tr>
+                        <tr>
+                            <th scope="row"><a href="https://www.tibiawiki.com.br/wiki/Falcon_Greaves"
+                                    target="_blank"><img src="./img/Falcon_Greaves.gif" alt=""></a></th>
+                            <td>Falcon Greaves</td>
+                            <td>10 + (7%Physical 7%Ice)</td>
+                            <td>+3 Meelee +3 Distance</td>
+                            <td>300</td>
+                        </tr>
+                        <tr>
+                            <th scope="row"><a href="https://www.tibiawiki.com.br/wiki/Prismatic_Legs"
+                                    target="_blank"><img src="./img/Prismatic_Legs.gif" alt=""></a></th>
+                            <td>Prismatic Legs</td>
+                            <td>8 + (3%Physical)</td>
+                            <td>+2 Distance</td>
+                            <td>300</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <div id="boot" style="margin-top: 3vh; margin-bottom: 5vh;">
+                <h2>Botas</h2>
+
+                <table class="table table-dark table-striped" style="width: 80%;margin-left: 10%;">
+                    <thead>
+                        <tr>
+                            <th scope="col">#</th>
+                            <th scope="col">Nome</th>
+                            <th scope="col">Arm</th>
+                            <th scope="col">Bônus</th>
+                            <th scope="col">Level Requerido</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <th scope="row"><a href="https://www.tibiawiki.com.br/wiki/Pair_of_Soulwalkers"
+                                    target="_blank"><img src="./img/Pair_of_Soulwalkers.gif" alt=""></a></th>
+                            <td>Pair of Soulwalkers</td>
+                            <td>4 + (7%Physical 5%Fire)</td>
+                            <td>+1 Meelee +25 Speed</td>
+                            <td>400</td>
+                        </tr>
+                        <tr>
+                            <th scope="row"><a href="https://www.tibiawiki.com.br/wiki/Winged_Boots"
+                                    target="_blank"><img src="./img/Winged_Boots.gif" alt=""></a></th>
+                            <td>Winged Boots</td>
+                            <td>2 + (7%Earth)</td>
+                            <td>+1 Distance +15 Speed</td>
+                            <td>220</td>
+                        </tr>
+                        <tr>
+                            <th scope="row"><a href="https://www.tibiawiki.com.br/wiki/Pair_of_Nightmare_Boots"
+                                    target="_blank"><img src="./img/Pair_of_Nightmare_Boots.gif" alt=""></a></th>
+                            <td>Pair of Nightmare Boots</td>
+                            <td>2 + (6%Energy)</td>
+                            <td>+1 Distance</td>
+                            <td>140</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </section>
+
+        <section id="armas" class="bg-custom" style="margin-bottom: 2vh; margin-top: 3vh;">
+            <div id="sword">
+                <h2>Espadas</h2>
+
+                <table class="table table-dark table-striped" style="width: 80%;margin-left: 10%;">
+                    <thead>
+                        <tr>
+                            <th scope="col">#</th>
+                            <th scope="col">Nome</th>
+                            <th scope="col">Atk</th>
+                            <th scope="col">Def</th>
+                            <th scope="col">Bonus</th>
+                            <th scope="col">Mãos</th>
+                            <th scope="col">Level Requerido</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <th scope="row"><a href="https://www.tibiawiki.com.br/wiki/Soulcutter" target="_blank"><img
+                                        src="./img/Soulcutter.gif" alt=""></a></th>
+                            <td>Soulcutter</td>
+                            <td>7 + 45 Death</td>
+                            <td>32+3</td>
+                            <td>+5 Sword 5%life 3%mana</td>
+                            <td>1</td>
+                            <td>400</td>
+                        </tr>
+                        <tr>
+                            <th scope="row"><a href="https://www.tibiawiki.com.br/wiki/Soulshredder"
+                                    target="_blank"><img src="./img/Soulshredder.gif" alt=""></a></th>
+                            <td>Soulshredder</td>
+                            <td>10 + 47 Ice</td>
+                            <td>35</td>
+                            <td>+5 Sword 10%CritChance 10%CritDamage</td>
+                            <td>2</td>
+                            <td>400</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <div id="axe">
+                <h2>Machados</h2>
+
+                <table class="table table-dark table-striped" style="width: 80%;margin-left: 10%;">
+                    <thead>
+                        <tr>
+                            <th scope="col">#</th>
+                            <th scope="col">Nome</th>
+                            <th scope="col">Atk</th>
+                            <th scope="col">Def</th>
+                            <th scope="col">Bônus</th>
+                            <th scope="col">Mãos</th>
+                            <th scope="col">Level Requerido</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <th scope="row"><a href="https://www.tibiawiki.com.br/wiki/Soulbiter" target="_blank"><img
+                                        src="./img/Soulbiter.gif" alt=""></a></th>
+                            <td>Soulbiter</td>
+                            <td>7 + 45 Death</td>
+                            <td>32 + 3</td>
+                            <td>+5 Axe +5%life +3%mana</td>
+                            <td>1</td>
+                            <td>400</td>
+                        </tr>
+                        <tr>
+                            <th scope="row"><a href="https://www.tibiawiki.com.br/wiki/Souleater_(Axe)"
+                                    target="_blank"><img src="./img/Souleater_(Axe).gif" alt=""></a></th>
+                            <td>Souleater (Axe)</td>
+                            <td>10 + 47 Ice</td>
+                            <td>34</td>
+                            <td>+5 Axe 10%CritChance 10%CritDamage</td>
+                            <td>2</td>
+                            <td>400</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <div id="club">
+                <h2>Clavas</h2>
+
+                <table class="table table-dark table-striped" style="width: 80%;margin-left: 10%;">
+                    <thead>
+                        <tr>
+                            <th scope="col">#</th>
+                            <th scope="col">Nome</th>
+                            <th scope="col">Atk</th>
+                            <th scope="col">Def</th>
+                            <th scope="col">Bônus</th>
+                            <th scope="col">Mãos</th>
+                            <th scope="col">Level Requerido</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <th scope="row"><a href="https://www.tibiawiki.com.br/wiki/Soulcrusher" target="_blank"><img
+                                        src="./img/Soulcrusher.gif" alt=""></a></th>
+                            <td>Soulbiter</td>
+                            <td>6 + 46 Ice</td>
+                            <td>33 + 3</td>
+                            <td>+5 Club +5%life +3%mana</td>
+                            <td>1</td>
+                            <td>400</td>
+                        </tr>
+                        <tr>
+                            <th scope="row"><a href="https://www.tibiawiki.com.br/wiki/Soulmaimer" target="_blank"><img
+                                        src="./img/Soulmaimer.gif" alt=""></a></th>
+                            <td>Soulmaimer</td>
+                            <td>10 + 47 Energy</td>
+                            <td>35</td>
+                            <td>+5 Club 10%CritChance 10%CritDamage</td>
+                            <td>2</td>
+                            <td>400</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <div id="rodsewands">
+                <h2>Rods e Wands</h2>
+
+                <table class="table table-dark table-striped" style="width: 80%;margin-left: 10%;">
+                    <thead>
+                        <tr>
+                            <th scope="col">#</th>
+                            <th scope="col">Nome</th>
+                            <th scope="col">Dano Médio</th>
+                            <th scope="col">Mana por hit</th>
+                            <th scope="col">Bônus</th>
+                            <th scope="col">Level Requerido</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <th scope="row"><a href="https://www.tibiawiki.com.br/wiki/Soultainter" target="_blank"><img
+                                        src="./img/Soultainter.gif" alt=""></a></th>
+                            <td>Soultainter</td>
+                            <td>100-120</td>
+                            <td>22</td>
+                            <td>+5ML 10%CritChance 10%CritDamage 10%Death</td>
+                            <td>400</td>
+                        </tr>
+                        <tr>
+                            <th scope="row"><a href="https://www.tibiawiki.com.br/wiki/Soulhexer" target="_blank"><img
+                                        src="./img/Soulhexer.gif" alt=""></a></th>
+                            <td>Soulhexer</td>
+                            <td>98-118</td>
+                            <td>21</td>
+                            <td>+5ML 10%CritChance 10%CritDamage 10%Death</td>
+                            <td>400</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <div id="distance" style="margin-bottom: 5vh;">
+                <h2>Distancia</h2>
+
+                <table class="table table-dark table-striped" style="width: 80%;margin-left: 10%;">
+                    <thead>
+                        <tr>
+                            <th scope="col">#</th>
+                            <th scope="col">Nome</th>
+                            <th scope="col">Atk</th>
+                            <th scope="col">Hit%</th>
+                            <th scope="col">Alcance</th>
+                            <th scope="col">Level Requerido</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <th scope="row"><a href="https://www.tibiawiki.com.br/wiki/Soulbleeder" target="_blank"><img
+                                        src="./img/Soulbleeder.gif" alt=""></a></th>
+                            <td>Soulbleeder</td>
+                            <td>+8</td>
+                            <td>+5</td>
+                            <td>6</td>
+                            <td>400</td>
+                        </tr>
+                        <tr>
+                            <th scope="row"><a href="https://www.tibiawiki.com.br/wiki/Soulpiercer" target="_blank"><img
+                                        src="./img/Soulpiercer.gif" alt=""></a></th>
+                            <td>Soulpiercer</td>
+                            <td>+9</td>
+                            <td>+6</td>
+                            <td>6</td>
+                            <td>400</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </section>
+
+        <section id="galery" class="bg-custom container-fluid" style="margin-top: 3vh;">
+            <h2>Galeria de Fotos</h2>
+
+            <div class="row gal">
+                <img src="./img/art1.jpg" class="img-fluid" alt="artwork" style="width: 40%; height: 40%; margin: 3vw;">
+                <img src="./img/art2.jpg" class="img-fluid" alt="artwork" style="width: 40%; height: 40%; margin: 3vw;">
+                <img src="./img/art3.jpg" class="img-fluid" alt="artwork" style="width: 40%; height: 40%; margin: 3vw;">
+                <img src="./img/art4.jpg" class="img-fluid" alt="artwork" style="width: 40%; height: 40%; margin: 3vw;">
+                <img src="./img/art5.jpg" class="img-fluid" alt="artwork" style="width: 40%; height: 40%; margin: 3vw;">
+                <img src="./img/art6.jpg" class="img-fluid" alt="artwork" style="width: 40%; height: 40%; margin: 3vw;">
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <h3>João Gabriel Casagrande</h3>
+        <p>Telefone: (19)9.9898-9973</p>
+        <p>Email: pngbighouse@gmail.com</p>
+    </footer>
+
+    <div class="modal fade" id="meu-modal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header text-center" id="cabecalho"
+                    style="background: rgb(32, 32, 41); color: whitesmoke;">
+                    <h4 class="modal-title w-100 font-weight-bold">Registro</h4>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body" id="body-modal" style="background-color: rgb(150, 150, 150);">
+                    <div class="md-form mb-5">
+                        <i class="fas fa-user prefix grey-text"></i>
+                        <label data-error="wrong" data-success="right" for="input">Nome</label>
+                        <input type="text" id="input" class="form-control validate" style="border: 1px solid black;">
+                    </div>
+                    <div class="md-form mb-5">
+                        <i class="fas fa-envelope prefix grey-text"></i>
+                        <label data-error="wrong" data-success="right" for="input">Email</label>
+                        <input type="email" id="input" class="form-control validate" style="border: 1px solid black;">
+                    </div>
+
+                    <div class="md-form mb-5">
+                        <i class="fas fa-tag prefix grey-text"></i>
+                        <label data-error="wrong" data-success="right" for="input">Senha</label>
+                        <input type="text" id="input" class="form-control validate" style="border: 1px solid black;">
+                    </div>
+
+                </div>
+
+                <div class="modal-footer d-flex justify-content-center" id="foot-modal" style="background-color:  rgb(32, 32, 41);">
+                    <button class="btn btn-unique" id="butao" style="background-color: rgb(150, 150, 150);">Confirmar
+                        <i class="fas fa-paper-plane-o ml-1"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</body>
+
+</html>

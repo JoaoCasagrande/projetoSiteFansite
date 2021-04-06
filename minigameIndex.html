@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+
+<head>
+    <meta charset="UTF-8">
+
+    <link rel="stylesheet" href="./css/minigame.css">
+
+    <title>Minigame</title>
+</head>
+
+<body class="bg" style="background-image: url('bg.jpg');">
+    <section id="interface" class="container">
+        <div class="cardSite row">
+            <div class="col-4" id="col1">
+                <div id="9" class="espaco" dropzone>
+                    
+                </div>
+                <div id="10" class="espaco" dropzone>
+                    
+                </div>
+                <div id="11" class="espaco" dropzone>
+                    
+                </div>
+            </div>
+            <div class="col-4" id="col2">
+                <div id="12" class="espaco" dropzone>
+
+                </div>
+                <div id="13" class="espaco" dropzone>
+
+                </div>
+                <div id="14" class="espaco" dropzone>
+
+                </div>
+                <div id="15" class="espaco" dropzone>
+
+                </div>
+            </div>
+            <div class="col-4" id="col3">
+                <div id="bp" class="espaco">
+                    <img src="./img/Jewelled_Backpack.gif" class="image">
+                </div>
+                <div id="16" class="espaco" dropzone>
+                    
+                </div>
+                <div id="torch" class="espaco">
+                    <img src="./img/Torch.gif" class="image">
+                </div>
+            </div>
+        </div>
+        <div class="cardSite row" style="margin-top: 35vh;">
+            <div class="recipiente">
+                <p>Bolsa</p>
+            </div>
+            <div class="col-3">
+                <div id="img-legs" class="espaco">
+                    <img id="6" src="./img/Fabulous_Legs.gif" class="image item" dropitem>
+                </div>
+                <div id="img-boots" class="espaco">
+                    <img id="7" src="./img/Pair_of_Soulwalkers.gif" class="image item" dropitem/>
+                </div>
+                <div class="espaco">
+                    <img src="" class="image">
+                </div>
+                <div class="espaco">
+                    <img src="" class="image">
+                </div>
+            </div>
+            <div class="col-3">
+                <div id="img-helmet" class="espaco">
+                    <img id="4" src="./img/Lion_Spangenhelm.gif" class="image item" dropitem/>
+                </div>
+                <div id="img-sword" class="espaco">
+                    <img id="2" src="./img/Soulcutter.gif" class="image item" dropitem/>
+                </div>
+                <div id="bp" class="espaco">
+
+                </div>
+                <div id="bp" class="espaco">
+
+                </div>
+            </div>
+            <div class="col-3">
+                <div id="img-ring" class="espaco">
+                    <img id="3" src="./img/Might_Ring.gif" class="image item" dropitem/>
+                </div>
+                <div id="img-amulet" class="espaco">
+                    <img id="1" src="./img/Stone_Skin_Amulet.gif" class="image item" dropitem/>
+                </div>
+                <div id="bp" class="espaco">
+
+                </div>
+                <div id="bp" class="espaco">
+
+                </div>
+            </div>
+            <div class="col-3">
+                <div id="img-shield" class="espaco">
+                    <img id="8" src="./img/Lion_Shield.gif" class="image item" dropitem/>
+                </div>
+                <div id="img-armor" class="espaco">
+                    <img id="5" src="./img/Lion_Plate.gif" class="image item" dropitem/>
+                </div>
+                <div id="bp" class="espaco">
+                    
+                </div>
+                <div id="bp" class="espaco">
+                    
+                </div>
+            </div>
+        </div>
+    </section>
+</body>
+
+<script>
+    
+
+    const items = Array.from(document.querySelectorAll('[dropitem]'))
+    for(let indItem of items) {
+        indItem.draggable = true
+        indItem.ondragstart = function(e) {
+            e.dataTransfer.setData('item.id', e.target.id)
+            console.log(e.target.id)
+        }
+    }
+
+    const dropzones = Array.from(document.querySelectorAll('[dropzone]'))
+    for(let zone of dropzones) {
+        zone.ondragover = function(e) {
+            e.preventDefault()
+        }
+
+        zone.ondrop = function(e) {
+            const id = e.dataTransfer.getData('item.id')
+            const iten = document.getElementById(id)
+
+            let idItem = id
+            let idZone = zone.id
+            if(idZone - idItem == 8) {
+                zone.appendChild(iten)
+            }
+
+        }                
+    }
+
+</script>
+
+</html>

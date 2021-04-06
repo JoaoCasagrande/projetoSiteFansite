@@ -1,0 +1,143 @@
+@font-face {
+    font-family: Martel;
+    src: url("../fonts/martel.ttf");
+}
+
+* { 
+    font-family: 'Muli';   
+}
+
+h2 {
+    font-family: 'Martel';
+}
+
+#minhaNav {
+    border-bottom: 1px solid rgb(121, 121, 121);
+}
+
+.navbar {
+    font-size: 1.2em;
+}
+
+.navbar ul {
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navbar li {
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navbar ul li a {
+    color: black;
+    text-decoration: none;
+    text-align: center;
+}
+
+.navbar a:hover {
+    color: rgb(137, 137, 137)
+}
+
+body {
+    height: 100vh;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.container {
+    color: rgb(121, 121, 121);
+    left: 50px;
+    top: 150px;
+}
+
+.cardSite {
+    width: 100%;
+    height: auto;
+}
+
+.cardSite>h2, .cardSite>h4 {
+    width: 50%;
+    float: left;
+}
+
+.cardSite>ul {
+    width: 50%;
+    float: left;
+}
+
+#pally {
+    min-height: 400px;
+}
+
+.cardSite>img {
+    margin-top: 40px;
+}
+
+.img-card {
+    margin-top: 100px;
+    width: 30vw;
+    margin-top: 70px !important;
+}
+
+.img-card>img {
+    width: 90%;
+    height: auto;
+}
+
+.bg-dark {
+    background-color: black;
+}
+
+.bg-custom {
+    background-color: rgb(32, 32, 41);
+    border: 1px solid rgb(121, 121, 121);
+}
+
+.container h2 {
+    margin-top: 3vh;
+    margin-left: 6vw;
+    color: white;
+}
+
+.container h4, .container li {
+    margin-left: 6vw;
+}
+
+.gal {
+    justify-content: center;
+    align-items: center;
+}
+
+#tutorial h2{
+    display: inline-block;
+    margin-bottom: 5vh;
+}
+
+#tutorial a {
+    color: rgb(189, 189, 189);
+    text-decoration: none;
+}
+
+#spoiler h2 {
+    font-weight: bolder;
+    margin-bottom: 5vh;
+}
+
+#spoiler a {
+    color: rgb(189, 189, 189);
+    text-decoration: none;
+}
+
+footer {
+    background-color: rgb(32, 32, 41);
+    color: whitesmoke;
+    text-align: right;
+    margin: 0;
+    bottom: 0;
+    border-top: 1px solid rgb(121, 121, 121);
+}
+
+footer h3, footer p {
+    margin-right: 3vw;
+}

@@ -1,0 +1,62 @@
+body, html {
+    height: 100%;
+    margin: 0;
+}
+
+.bg {
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#interface {
+    height: 588px;
+    width: 286px;
+    background-color: #6C6C6C;
+    border: 3px solid black;
+    justify-self: center;
+    margin-top: 5vh;
+    margin-left: 38%;
+}
+
+.cardSite {
+    height: auto;
+    width: 100%;
+}
+
+.cardSite>div {
+    float: left;
+}
+
+.espaco {
+    width: 50px;
+    height: 50px;
+    background-color: #AAAAAA;
+    border: 3px solid rgb(0, 0, 0);
+    margin: 7px;
+}
+
+.image {
+    margin-left: 9px;
+    margin-top: 9px;
+}
+
+#col1 {
+    margin-left: 2.7vw;
+    margin-top: 5vh;
+}
+
+#col2 {
+    margin-top: 2vh;
+}
+
+#col3 {
+    margin-top: 5vh;
+}
+
+.recipiente {
+    width: 100%;
+    border-top: 1px solid black;
+    border-bottom: 1px solid black;
+    text-align: center;
+    padding: 0;
+}
